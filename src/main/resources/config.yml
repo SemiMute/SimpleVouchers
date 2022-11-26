@@ -1,6 +1,9 @@
 #######################################################
 #         SimpleVouchers by SemiMute
 # A simple free, easy to use vouchers plugin
+#
+# Messages support "Chat Codes"
+# https://htmlcolorcodes.com/bukkit-color-codes/
 #######################################################
 
 prefix: "&8[&b&lSimple&d&lVouchers&8]"
@@ -17,8 +20,8 @@ vouchers:
     material:
     item-name: "&b&lRank &d&lVoucher &7(Right-Click)"
     lore:
-      - ""
-      - ""
-      - ""
+      - "&7Right click this voucher to redeem"
+      - "&7the &bExample Rank&7 on this server!"
     commands:
       - "lp user %PLAYER%"
+    message: "%PLAYER% redeemed the example voucher!" #Message sent to the player redeeming. Put "none" for no message
