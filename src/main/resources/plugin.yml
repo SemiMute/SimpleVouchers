@@ -1,7 +1,14 @@
 name: SimpleVouchers
 version: '${project.version}'
-main: me.semimute.simplevouchers.simplevouchers.SimpleVouchers
+main: me.semimute.simplevouchers.SimpleVouchers
 api-version: 1.19
 prefix: SimpleVouchers
 authors: [ SemiMute ]
 description: A Simple vouchers plugin that's free to use, and open source.
+commands:
+  voucher:
+    description: "Main command for SimpleVouchers"
+    usage: /<command>
+    aliases:
+      - vouchers
+      - sv
