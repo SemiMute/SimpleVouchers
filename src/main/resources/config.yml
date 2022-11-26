@@ -5,3 +5,20 @@
 
 prefix: "&8[&b&lSimple&d&lVouchers&8]"
 duped-icon: "&c&lDUPED ITEM"
+secure-vouchers: true # Use UUID protection on items to prevent possible duped vouchers from being used?
+
+##########################################
+# ACCEPTED PLACEHOLDERS
+# - %PLAYER% - The username of the player
+# - %PLAYER_DISPLAYNAME% - The players display name
+##########################################
+vouchers:
+  example:
+    material:
+    item-name: "&b&lRank &d&lVoucher &7(Right-Click)"
+    lore:
+      - ""
+      - ""
+      - ""
+    commands:
+      - "lp user %PLAYER%"
