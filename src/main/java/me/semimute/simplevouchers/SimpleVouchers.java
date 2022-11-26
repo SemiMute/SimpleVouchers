@@ -1,6 +1,7 @@
 package me.semimute.simplevouchers;
 
 import me.semimute.simplevouchers.Commands.VoucherCommand;
+import me.semimute.simplevouchers.Listeners.PlayerInteractListener;
 import me.semimute.simplevouchers.Managers.DataManager;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -20,6 +21,10 @@ public final class SimpleVouchers extends JavaPlugin {
         getConfig().options().copyDefaults(true);
         config = getConfig();
 
+        // Event Registers
+        getServer().getPluginManager().registerEvents(new PlayerInteractListener(), this);
+
+        // Command Registers
         getCommand("voucher").setExecutor(new VoucherCommand());
 
     }
