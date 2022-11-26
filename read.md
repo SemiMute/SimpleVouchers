@@ -1,0 +1,1 @@
+a simple voucher plugin made for Spigot 1.19.2
